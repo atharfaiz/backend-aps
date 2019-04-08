@@ -17,7 +17,7 @@ public class DataController {
 	}
 	
 	public String test() {
-		return "Welcome to rabban";
+		return "Welcome to rabban hi nn";
 	}
 	
 	
