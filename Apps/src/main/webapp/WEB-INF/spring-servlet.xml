@@ -11,6 +11,18 @@
     <context:component-scan base-package="org.apps.*">
     	<!-- <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/> -->
     </context:component-scan> 
+    
+    <bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>classpath:HelpLinks</value>
+				<value>classpath:EmailTemplates</value>
+				<value>classpath:ActionMessages</value>
+			</list>
+		</property>
+		<property name="defaultEncoding" value="UTF-8" />
+	</bean>
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
