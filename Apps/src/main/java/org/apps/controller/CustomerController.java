@@ -12,7 +12,7 @@ public class CustomerController {
 	public ResponseEntity<List<Object>> addCustomer(){
 		ResponseEntity<List<Object>> response=null;
 		try {
-			response=new ResponseEntity<>(null,HttpStatus.OK);
+			//response=new ResponseEntity<List<Object>>(null,HttpStatus.OK);
 		}catch(Exception e) {
 			
 		}

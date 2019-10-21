@@ -1,5 +1,9 @@
 package org.apps.common;
-
+/**
+ * 
+ * @author FAIZ
+ *
+ */
 public class QueryGenerator {
 	
 	public static String and() {

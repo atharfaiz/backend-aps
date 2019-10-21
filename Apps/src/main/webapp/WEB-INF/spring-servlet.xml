@@ -32,5 +32,13 @@
 	<mvc:resources mapping="/webjars/**"
 		location="classpath:/META-INF/resources/webjars/" />
 	<mvc:resources mapping="/incs/**" location="/incs/" />
+	<!-- <mvc:cors>
+		<mvc:mapping path="/api/**" allowed-origins="https://domain1.com, https://domain2.com"
+					 allowed-methods="GET, PUT" allowed-headers="header1, header2, header3"
+					 exposed-headers="header1, header2" allow-credentials="false" max-age="123" />
+
+		<mvc:mapping path="/resources/**" allowed-origins="https://domain1.com" />
+
+	</mvc:cors> -->
 	
 </beans>

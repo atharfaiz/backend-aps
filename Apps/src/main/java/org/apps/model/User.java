@@ -5,10 +5,16 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import org.springframework.data.jpa.repository.Query;
+
 @Entity
+@Table
 public class User {
 	
 	@Id
@@ -21,6 +27,7 @@ public class User {
 	
 	private String mobile;
 	
+	
 	@Temporal(TemporalType.DATE)
 	private Date effectiveDate;
 	
@@ -29,6 +36,10 @@ public class User {
 	
 	@Temporal(TemporalType.DATE)
 	private Date dob;
+	
+	@OneToOne
+	@JoinColumn
+	private Address address;
 	
 	
 	public Integer getId() {
@@ -73,7 +84,11 @@ public class User {
 	public void setDob(Date dob) {
 		this.dob = dob;
 	}
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
+	}
 	
-	
-
 }
