@@ -130,7 +130,7 @@
 		<finalName>Apps</finalName>
 	</build>
 	<properties>
-		<spring.version>4.2.1.RELEASE</spring.version>
+		<spring.version>5.2.22.RELEASE</spring.version>
 		<security.version>4.0.3.RELEASE</security.version>
 		<hibernate.version>4.3.5.Final</hibernate.version>
 		<org.aspectj-version>1.7.4</org.aspectj-version>
